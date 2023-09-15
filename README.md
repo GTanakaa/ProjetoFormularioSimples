@@ -20,7 +20,6 @@ Esse projeto é um modelo simples de formulário para cadastro de clientes de um
 ## Requisitos
 
 * Neste projeto foi utilizado VSCODE(Visual Studio) juntamente a algumas extensões;
-* 
 
 No arquivo formulario.html estará explicado o que significa cada bloco do código!
 É possível repartir os códigos HTML e CSS caso queira, será necessário apenas puxa-lo pelo comando
