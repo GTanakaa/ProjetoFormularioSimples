@@ -1,9 +1,9 @@
-# ProjetoFormularioSimples
+# Projeto de Formulário Simples
 
 ## Introdução
 Esse projeto é um modelo simples de formulário para cadastro de clientes de uma provedora de internet.
 
-<img src="https://media.discordapp.net/attachments/852286896101130271/1152146961839955998/Formulario.PNG?width=327&height=684">
+
 
 ## Techs
 
@@ -16,8 +16,9 @@ Esse projeto é um modelo simples de formulário para cadastro de clientes de um
 
 ## Requisitos
 
-* Neste projeto foi utilizado VSCODE(Visual Studio) jutnamente a algumas extensões;
-* <img src="https://media.discordapp.net/attachments/852286896101130271/1152142313032794122/download.gif">
+* Neste projeto foi utilizado VSCODE(Visual Studio) juntamente a algumas extensões;
+* 
 
-Dentro do arquivo formulario.html estará explicado o que significa cada bloco do código!
+No arquivo formulario.html estará explicado o que significa cada bloco do código!
+É possível repartir os códigos HTML e CSS caso queira, será necessário apenas puxa-lo pelo comando
   
