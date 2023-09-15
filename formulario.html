@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Tanaka</title>
+    <style> /* Começo do CSS/elementos da página*/                                                                                   
+        body{
+            font-family: Arial, Helvetica, sans-serif;  /*Fonte desejada e plano de fundo da página*/
+            background-image: linear-gradient(to right, rgb(46, 1, 170), rgb(48, 5, 88)) ;
+        }
+        .box{            
+            color: white;       /*Criação da caixa do formulario e posicionamento */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(https://img.freepik.com/vetores-gratis/vetor-de-icone-de-tecnologia-de-internet-sem-fio-em-neon-em-fundo-gradiente_53876-112183.jpg?w=826&t=st=1694750733~exp=1694751333~hmac=7e5aac98ad33943d940365afbb7379b2a9a056776755907bdf7731cfe6e6c2dc);
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+        }
+        fieldset{
+            border: 3px solid rgb(52, 7, 216);  /* Adicionar uma borda para deixar mais detalhado*/
+        }
+        legend{
+            border: 1px solid rgb(52, 7, 216);
+            padding: 10px;
+            text-align: center;
+            background: rgb(52, 7, 216);
+            border-radius: 8px;
+        }
+        .inputxBox{
+            position: absolute;
+        }
+        .inputUser{
+            background: none;           /*Criação de uma "linha de caderno" */
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{                    /*Posicionamento dos títulos dos dados para gerar animação*/
+            position: absolute;
+            top: auto;
+            left: 35px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput, 
+        .inputUser:valid ~ .labelInput{
+            top: none;                     /*Animação de item completo */
+            font-size: 12px;
+            color: rgb(7, 216, 42);
+            
+        }
+        #data_nasc{                 /* Personalização para caixa data de nascimento*/
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+        #submit{
+            background-image: repeating-linear-gradient(to right, rgba(37, 10, 100, 0.76), rgb(90, 20, 220));
+            width: 100%;
+            border: none;           /*Personalização do botão Enviar e mudança do mouse */
+            border-radius: 10px;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        #submit:hover{              /*Mudança de contraste no botão Enviar */
+            background-image: linear-gradient(to right, rgba(37, 10, 100, 0.849), rgba(90, 20, 220, 0.836));
+        }
+    </style> 
+</head>
+<body>
+                        
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend> 
+                    <b>Formulário de Clientes</b>            <!--Título principal-->       
+                </legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>    <!--Campo para registrar Nome do CLiente-->
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+                <br>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required> <!--Campo registro de email-->
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br>
+                <br>
+                <div class="inputBox">
+                    <input type="cel" name="telefone" id="telefone" class="inputUser" required> <!--Campo registro número para contato-->
+                    <label for="telefone" class="labelInput">Telefone</label>
+                    <br>
+                </div>
+                <p>Sexo:</p>                                                            <!--Primeira caixa, para seleção de gênero -->
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <div class="inputBox">
+                    <br>
+                    <input type="text" name="genero" id="genero" class="inputUser" required>
+                    <label for="genero" class="labelInput"></label>
+
+                </div>
+                <br>
+
+                    <label for="data_nasc"><b>Data de Nascimento</b></label>            <!--Segunda caixa, para registro de data de nascimento-->
+                    <input type="date" name="data_nasc" id="data_nasc" required>
+                <br>
+                <br>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>    <!--Campo registro de cidade do cliente-->
+                    <label for="cidade" class="labelInput">Cidade</label>
+
+                </div>
+                <br>
+                <br>                
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>    <!--Estado onde mora-->
+                    <label for="estado" class="labelInput">Estado</label>
+
+                </div>
+                <br>
+                <br>                
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>    <!--Endereço, Rua...-->
+                    <label for="endereco" class="labelInput">Endereço</label>
+                </div>
+                <br>
+                <p>Planos:</p>                                                                      <!--Terceira e ultima caixa, para seleção de banda larga de internet-->
+                <input type="radio" id="150megas" name="plano" value="150megas" required>
+                <label for="150megas">150 Megas</label>
+                <br>
+                <input type="radio" id="250megas" name="plano" value="250megas" required>
+                <label for="250megas">250 Megas</label>
+                <br>
+                <input type="radio" id="450megas" name="plano" value="450megas" required>
+                <label for="450megas">450 Megas</label>
+                <br>
+                <input type="radio" id="outro" name="plano" value="outro" required>
+                <label for="outro">Outros</label>
+                <br>
+                <br>
+                <br>
+                <input type="submit" name="submit" id="submit">
+
+            </fieldset>
+        </form>
+    </div>
+     
+</body>
+</html>
