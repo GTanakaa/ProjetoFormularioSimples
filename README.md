@@ -2,7 +2,8 @@
 
 ## Introdução
 Esse projeto é um modelo simples de formulário para cadastro de clientes de uma provedora de internet.
-<img src="https://media.discordapp.net/attachments/852286896101130271/1152142313032794122/download.gif">
+
+<img src="https://media.discordapp.net/attachments/852286896101130271/1152145901335351306/Formulario.PNG?width=339&height=684">
 
 ## Techs
 
